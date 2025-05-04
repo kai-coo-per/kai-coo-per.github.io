@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://kai-coo-per.github.io/al-folio/sitemap.xml
+Sitemap: https://kai-coo-per.github.io/sitemap.xml
