@@ -391,14 +391,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-my-work-using-causal-inference-to-unmask-racial-discrimination-in-traffic-enforcement-via-proxies-has-been-accepted-for-a-parallel-talk-at-the-international-computational-social-science-conference-ic2s2-2025-in-norrkoping-sweden",
-          title: 'My work “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via...',
-          description: "",
-          section: "News",},{id: "news-my-contributed-submission-quantifying-causal-effects-via-temporal-regression-discontinuity-designs-with-time-varying-effects-has-been-accepted-for-a-15-minute-presentation-at-the-joint-statistical-meetings-2025-in-nashville-tn",
+            },},{id: "news-my-contributed-submission-quantifying-causal-effects-via-temporal-regression-discontinuity-designs-with-time-varying-effects-has-been-accepted-for-a-15-minute-presentation-at-the-joint-statistical-meetings-2025-in-nashville-tn",
           title: 'My contributed submission “Quantifying Causal Effects via Temporal Regression Discontinuity Designs with Time-Varying...',
           description: "",
           section: "News",},{id: "news-my-poster-using-causal-inference-to-unmask-racial-discrimination-in-traffic-enforcement-via-proxies-has-been-accepted-for-presentation-at-acic-2025-in-detroit",
           title: 'My poster: “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via...',
+          description: "",
+          section: "News",},{id: "news-my-work-using-causal-inference-to-unmask-racial-discrimination-in-traffic-enforcement-via-proxies-has-been-accepted-for-a-parallel-talk-at-the-international-computational-social-science-conference-ic2s2-2025-in-norrkoping-sweden",
+          title: 'My work “Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
