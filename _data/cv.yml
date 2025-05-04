@@ -16,7 +16,6 @@
       year: 2023 - present
       description:
         - Partial identification strategies for causal inference
-        - 
         # - Description 2.
         # - title: Description 3.
         #   contents:
@@ -26,8 +25,8 @@
       institution: Imperial College London
       year: 2023
       description:
-         - Classification - First Class
-         - Thesis - "Air quality impacts of new public transport provision. A causal study of the Elizabeth Line in London". Supervised by Dr. Liang Ma and Professor Dan Graham.
+         - Classification > First Class
+         - Thesis > "Air quality impacts of new public transport provision. A causal study of the Elizabeth Line in London". Supervised by Dr. Liang Ma and Professor Dan Graham.
 
 # - title: Experience
 #   type: time_table
