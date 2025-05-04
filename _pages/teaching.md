@@ -4,7 +4,7 @@ permalink: /teaching/
 title: teaching
 description: Courses I have contributed to or taught. 
 nav: true
-nav_order: 6
+nav_order: 3
 ---
 
 ### Teaching Assistant, OIDD 7770: Introduction to Python for Data Science  
@@ -15,7 +15,7 @@ Supported graduate-level instruction in modern data scientific practices with Py
 
 ### Teaching Assistant, MATH-352: Causal Thinking  
 **EPFL, Autumn 2022**  
-Designed bespoke teaching materials for a class on Causal Inference for non-statisticians. Materials included written, mathematical exercises and coding problems in Python and R. Supervised my [Mats Stensrud][] and [Matias Janvin][]. 
+Designed bespoke teaching materials for a class on Causal Inference for non-statisticians. Materials included written, mathematical exercises and coding problems in Python and R. Supervised my [Mats Stensrud](https://matsjst.github.io) and Matias Janvin. 
 
 ---
 
