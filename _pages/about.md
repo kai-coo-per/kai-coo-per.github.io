@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: Contact. kaicoop [at] wharton [dot] upenn [dot] edu
+subtitle: contact. kaicoop [at] wharton [dot] upenn [dot] edu
 
 profile:
   align: right
-  image: scotland_prof_pic.jpg
+  image: scotland_prof_pic.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Huntsman Hall, 5th Floor</p>
