@@ -3,19 +3,20 @@
   contents:
     - name: Full Name
       value: Kai Reis Darius Cooper
-    - name: Date of Birth
-      value: October 2000
+#    - name: Date of Birth
+#      value: October 2000
     - name: Languages
       value: English (native), French (B2, last evaluated 2021)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: PhD, Operations, Information and Decisions
       institution: The Wharton School, University of Pennsylvania
-      year: 2023 -- present
+      year: 2023 - present
       description:
-        - Partial identification methods for causal inference
+        - Partial identification strategies for causal inference
+        - 
         # - Description 2.
         # - title: Description 3.
         #   contents:
@@ -24,9 +25,9 @@
     - title: MSci Mathematics
       institution: Imperial College London
       year: 2023
-      # description:
-      #   - Description 1.
-      #   - Description 2.
+      description:
+         - Classification - First Class
+         - Thesis - "Air quality impacts of new public transport provision. A causal study of the Elizabeth Line in London". Supervised by Dr. Liang Ma and Professor Dan Graham.
 
 # - title: Experience
 #   type: time_table
@@ -84,14 +85,14 @@
   contents:
     - title: Algorithmic partial identification
       items:
-        - numerical optimization, see [autobounds](https://www.tandfonline.com/doi/abs/10.1080/01621459.2023.2216909)
+        - formalism
+        - numerical optimization, see autobounds software
         - symbolic approaches
-        - covariate-assisted bounds
     - title: Discrimination in police enforcement
       items:
         - selection bias
         - mediation
-        - porximal causal inference
+        - proximal causal inference
 
 # - title: Other Interests
 #   type: list
