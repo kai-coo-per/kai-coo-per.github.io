@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My poster: "Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies" has been accepted for presentation at ACIC 2025 in Detroit!
+My poster: **"Using Causal Inference to Unmask Racial Discrimination in Traffic Enforcement via Proxies"** has been accepted for presentation at ACIC 2025 in Detroit!
