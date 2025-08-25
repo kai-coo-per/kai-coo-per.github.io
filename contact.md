@@ -3,9 +3,16 @@ layout: default
 is_contact: true
 ---
 
-* Email: [kaicoop@wharton.upenn.edu](mailto:kaicoop@wharton.upenn.edu)
+* Email: kaicoop [at] wharton [dot] upenn [dot] edu
 
 ---
+
+## Social
+
+1. [LinkedIn](www.linkedin.com/in/kaicoop-phd/)
+{% comment %}
+2. [Twitter](#)
+3. [Google+](#)
 
 ## Mailing Address
 
@@ -14,11 +21,5 @@ is_contact: true
 > London
 >
 > United Kingdom
-
 ---
-
-## Social
-
-1. [Facebook](#)
-2. [Twitter](#)
-3. [Google+](#)
+{% endcomment %}
