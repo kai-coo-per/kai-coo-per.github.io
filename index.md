@@ -4,7 +4,7 @@ layout: default
 
 ## About Me
 
-<img class="profile-picture" src="scotland_prof_pic.jpeg">
+<img class="profile-picture" src="headshot.jpg">
 
 Welcome. I’m Kai — a PhD student in the [Operations, Information and Decisions Department](https://oid.wharton.upenn.edu) at the [Wharton School of the University of Pennsylvania](https://www.wharton.upenn.edu/), and an affiliate of the [Centre for Causal Inference](https://dbei.med.upenn.edu/center-of-excellence/cci/) at Penn Biostat. I am very fortunate to be advised by [Dean Knox](https://dcknox.github.io).
 
@@ -26,4 +26,4 @@ I study **causal inference** in theory and application. My research broadly foll
 
 > I don't read the [manu]script, the [manu]script reads me
 
-- **Kirk Lazarus, Vietnam 2008**
+**Kirk Lazarus, Vietnam 2008**
