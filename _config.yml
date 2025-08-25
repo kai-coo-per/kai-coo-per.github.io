@@ -22,3 +22,8 @@ nav:
    link: "resume.pdf"
  - name: "Contact"
    link: "contact"
+
+defaults:
+  - scope: { path: "", type: news }
+    values: { layout: news }
+

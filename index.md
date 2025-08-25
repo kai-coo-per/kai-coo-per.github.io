@@ -4,42 +4,31 @@ layout: default
 
 ## About Me
 
-<img class="profile-picture" src="sherlock.jpg">
+<img class="profile-picture" src="scotland_prof_pic.jpg">
 
-Hi! I am a junior year student of B.E. Computer Science at Birla Institute of Technology and Science, Pilani.
+Welcome. I’m Kai — a PhD student in the [Operations, Information and Decisions Department](https://oid.wharton.upenn.edu) at the [Wharton School of the University of Pennsylvania](https://www.wharton.upenn.edu/), and an affiliate of the [Centre for Causal Inference](https://dbei.med.upenn.edu/center-of-excellence/cci/) at Penn Biostat. I am very fortunate to be advised by [Dean Knox](https://dcknox.github.io).
 
-This is a jekyll based resume template. You can find the full source code on [GitHub](https://github.com/bk2dcradle/researcher)
+I grew up in Birmingham, UK (but support Arsenal FC). Before joining Penn, I obtained a master’s degree in mathematics from [Imperial College London](https://www.imperial.ac.uk/mathematics/), during which I was grateful to spend a year studying abroad at the [École polytechnique fédérale de Lausanne](https://www.epfl.ch/en/) in [Switzerland](https://www.reddit.com/r/SwitzerlandIsFake/). 
+
+When not in the office, you'll find me: at the cinema, playing **foot**ball or badminton, or reading or watching some dystopian science-fiction. 
 
 ## Research Interest
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
+I study **causal inference** in theory and application. My research broadly follows two streams: (i) developing (algorithmic) partial identification strategies which permit causal inferences in challenging data environments; (ii) applying modern causal inference techniques to policy evaluation and investigate fairness in social and institutional settings, e.g. police enforcement and education. 
 
-## Publications
+% ## Publications
 
-1. F.Bar, J.Doe: Effects of having a placeholder of a name
-2. S.Holmes, J.Watson: Consequences of living with a sociopath in London
+%1. F.Bar, J.Doe: Effects of having a placeholder of a name
+%2. S.Holmes, J.Watson: Consequences of living with a sociopath in London
 
-## Typography
+## News
 
-This is a [link](http://google.com). Something *italics* and something **bold**.
+{% include news.html limit=6 %}
 
-Here is a table
-
-Year | Award | Category
------|-------|--------
-2014 | Emmy  | Won Outstanding Lead Actor in a miniseries or a movie
-2015 | BAFTA | Nominated for Best Leading Actor for Sherlock
-2014 | Satellite | Won Best Actor miniseries or television film
-
-Here is a horizontal rule
 
 ---
 
-Here is a blockquote
 
-> To a great mind, nothing is little
+> I don't read the [manu]script, the [manu]script reads me
 
-## References
-
-* Foo Bar: Head of Department, Placeholder Names, Lorem
-* John Doe: Associate Professor, Department of Computer Science, Ipsum
+- **Kirk Lazarus, Vietnam 2008**

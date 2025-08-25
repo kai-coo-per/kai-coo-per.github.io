@@ -1,0 +1,54 @@
+{% comment %}
+Params:
+- limit: number (optional)
+- type: filter by item.type (optional)
+- show_type: default true
+- show_link_without_blurb: default true
+- toggle_label / toggle_label_open: default "More" / "Less"
+- more_label: default "More details →"
+{% endcomment %}
+
+{% assign items = site.news | sort: "date" | reverse %}
+{% if include.type %}{% assign items = items | where: "type", include.type %}{% endif %}
+{% if include.limit %}{% assign items = items | slice: 0, include.limit %}{% endif %}
+
+<ul class="news-list">
+  {% for item in items %}
+    {% assign body = item.content | strip %}
+    {% assign has_blurb = body != "" %}
+
+    {%- comment -%} Decide best link target (explicit more_url > external_url > item page if it has a body) {%- endcomment -%}
+    {% assign link_raw = item.more_url | default: item.external_url %}
+    {% if link_raw == nil and has_blurb %}{% assign link_raw = item.url %}{% endif %}
+    {% if link_raw %}
+      {% if link_raw contains '://' %}
+        {% assign link_href = link_raw %}
+      {% else %}
+        {% assign link_href = link_raw | relative_url %}
+      {% endif %}
+    {% endif %}
+
+    <li class="news-item">
+      <time class="news-date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+      {% if include.show_type != false and item.type %}<span class="news-type">{{ item.type }}</span>{% endif %}
+      {% if item.summary %}<span class="news-summary">{{ item.summary }}</span>{% endif %}
+
+      {% if has_blurb %}
+        <details class="news-details">
+          <summary>
+            <span class="toggle-collapsed">{{ include.toggle_label | default: "More" }}</span>
+            <span class="toggle-expanded">{{ include.toggle_label_open | default: "Less" }}</span>
+          </summary>
+          <div class="news-blurb">
+            {{ item.content }} {# already HTML-rendered #}
+            {% if link_href %}
+              <p class="news-link"><a href="{{ link_href }}">{{ include.more_label | default: "More details →" }}</a></p>
+            {% endif %}
+          </div>
+        </details>
+      {% elsif link_href and include.show_link_without_blurb != false %}
+        <a class="news-more" href="{{ link_href }}">{{ include.more_label | default: "More details →" }}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
