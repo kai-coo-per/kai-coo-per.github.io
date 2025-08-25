@@ -1,5 +1,5 @@
 {% comment %}
-Options you can pass when including:
+Options:
 - limit: number of items (optional)
 - type: filter by item.type (optional)
 - date_format: default "%b %-d, %Y"
@@ -13,20 +13,20 @@ Options you can pass when including:
 
 <ul class="news-list">
   {% for item in items %}
-    {%- assign raw_body = item.blurb | default: item.content -%}
-    {%- assign body_stripped = raw_body | strip | strip_html | strip_newlines -%}
-    {%- assign has_blurb = body_stripped != "" -%}
+    {% assign raw_body = item.blurb | default: item.content %}
+    {% assign body_clean = raw_body | strip | strip_html | strip_newlines %}
+    {% assign has_blurb = body_clean | size | minus:0 %}
 
     <li class="news-item">
       <span class="news-line">
         <strong>{{ item.date | date: date_fmt }}</strong>.
-        {%- if item.type %} <strong>{{ item.type }}</strong>.{% endif %}
+        {% if item.type %} <strong>{{ item.type }}</strong>.{% endif %}
         <span class="news-summary">
           {{ item.summary | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}
         </span>
       </span>
 
-      {% if has_blurb %}
+      {% if has_blurb > 0 %}
         <details class="news-details">
           <summary class="news-toggle">
             <span class="toggle-collapsed">{{ include.toggle_label | default: "More" }}</span>
