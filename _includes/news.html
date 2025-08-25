@@ -1,11 +1,9 @@
 {% comment %}
-Options:
-- limit: number (optional)
+Options you can pass when including:
+- limit: number of items (optional)
 - type: filter by item.type (optional)
 - date_format: default "%b %-d, %Y"
 - toggle_label / toggle_label_open: default "More" / "Less"
-- link_if_no_blurb: default false
-- more_label: default "More details →"
 {% endcomment %}
 
 {% assign items = site.news | sort: "date" | reverse %}
@@ -19,15 +17,6 @@ Options:
     {%- assign body_stripped = raw_body | strip | strip_html | strip_newlines -%}
     {%- assign has_blurb = body_stripped != "" -%}
 
-    {%- assign link_raw = item.more_url | default: item.external_url -%}
-    {%- if link_raw -%}
-      {%- if link_raw contains '://' -%}
-        {%- assign link_href = link_raw -%}
-      {%- else -%}
-        {%- assign link_href = link_raw | relative_url -%}
-      {%- endif -%}
-    {%- endif -%}
-
     <li class="news-item">
       <span class="news-line">
         <strong>{{ item.date | date: date_fmt }}</strong>.
@@ -37,22 +26,21 @@ Options:
         </span>
       </span>
 
-      {%- if has_blurb -%}
+      {% if has_blurb %}
         <details class="news-details">
           <summary class="news-toggle">
             <span class="toggle-collapsed">{{ include.toggle_label | default: "More" }}</span>
             <span class="toggle-expanded">{{ include.toggle_label_open | default: "Less" }}</span>
           </summary>
           <div class="news-blurb">
-            {%- if item.blurb -%}{{ item.blurb | markdownify }}{%- else -%}{{ item.content }}{%- endif -%}
-            {%- if link_href -%}
-              <p class="news-link"><a href="{{ link_href }}">{{ include.more_label | default: "More details →" }}</a></p>
-            {%- endif -%}
+            {% if item.blurb %}
+              {{ item.blurb | markdownify }}
+            {% else %}
+              {{ item.content }}
+            {% endif %}
           </div>
         </details>
-      {%- elsif include.link_if_no_blurb and link_href -%}
-        <a class="news-more" href="{{ link_href }}">{{ include.more_label | default: "More details →" }}</a>
-      {%- endif -%}
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
