@@ -1,12 +1,15 @@
-title: Researcher
-url: "https://ankitsultana.com"
-baseurl: "/researcher"
+title: Kai Cooper
+url: "https://kai-coo-per.github.io"  # user/org site root
+baseurl: ""                           # IMPORTANT: empty for user sites
 
-markdown: kramdown
-#ins_logo: "./bits-logo.png"
+plugins:
+  - jekyll-remote-theme               # GitHub Pages allows this
 
-tracking_id: #
+remote_theme: ankitsultana/researcher # The Researcher theme
 
+# (optional theme settings)
+# ins_logo: "./bits-logo.png"
+# tracking_id:
 footer: yes
 footer_url: "https://github.com/ankitsultana"
 footer_text: "Page design by Ankit Sultana"
