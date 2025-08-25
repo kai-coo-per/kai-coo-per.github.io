@@ -19,7 +19,7 @@ sass:
     sass_dir: _sass
 
 nav:
- - name: "Resume"
+ - name: "CV"
    link: "KC_CV_2025.pdf"
  - name: "Contact"
    link: "contact"
