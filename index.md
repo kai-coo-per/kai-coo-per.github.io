@@ -6,7 +6,7 @@ layout: default
 
 <img class="profile-picture" src="headshot.jpg">
 
-Welcome. I’m Kai — a PhD student in the [Operations, Information and Decisions Department](https://oid.wharton.upenn.edu) at the [Wharton School of the University of Pennsylvania](https://www.wharton.upenn.edu/), and an affiliate of the [Centre for Causal Inference](https://dbei.med.upenn.edu/center-of-excellence/cci/) at Penn Biostat. I am very fortunate to be advised by [Dean Knox](https://dcknox.github.io).
+Welcome. I’m Kai — a PhD student in the [Operations, Information and Decisions Department](https://oid.wharton.upenn.edu) at [The Wharton School of the University of Pennsylvania](https://www.wharton.upenn.edu/), and an affiliate of the [Centre for Causal Inference](https://dbei.med.upenn.edu/center-of-excellence/cci/) at Penn Biostat. I am very fortunate to be advised by [Dean Knox](https://dcknox.github.io).
 
 I grew up in Birmingham, UK (but support Arsenal FC). Before joining Penn, I obtained a master’s degree in mathematics from [Imperial College London](https://www.imperial.ac.uk/mathematics/), during which I was grateful to spend a year studying abroad at the [École polytechnique fédérale de Lausanne](https://www.epfl.ch/en/) in [Switzerland](https://www.reddit.com/r/SwitzerlandIsFake/). 
 
